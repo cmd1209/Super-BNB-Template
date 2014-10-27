@@ -1,0 +1,29 @@
+//navigation elements
+header
+  h1
+    float: left
+    @include media($small-screen)
+      text-align: center
+      float: none
+      margin: 1em
+  nav
+    text-align: right
+    margin-top: 0.75em
+    @include media($small-screen)
+      text-align: center
+    li
+      display: inline-block
+    a
+      color: $darkest-gray
+      background-color: $accent-color
+      color: white
+      padding: 0.65em 1em
+      margin-left: 0.5em
+      border-radius: $base-border-radius
+      @include media($small-screen)
+        margin-left: 0.25em
+        margin-right: 0.25em
+      &:hover
+        background-color: $base-link-color
+        color: white
+

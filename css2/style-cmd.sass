@@ -1,0 +1,45 @@
+@import 'tools/tools-index'
+@import 'parts/nav'
+@import 'parts/article'
+
+.hero
+  background: url(http://andreas-heller.de/wp-content/uploads/2013/12/666-04-Kirchenweg-6-sylt.jpg) no-repeat center center
+  min-height: 500xpx
+  background-size: cover
+
+section.mainpage
+  background-color: $primary-color
+
+.pcontain
+  @include columns(2)
+  @include media($small-screen)
+    @include columns(1)
+
+.left, .right
+  @include span-columns(6)
+  @include media($small-screen)
+    @include span-columns(6)
+
+.wrap
+  @include outer-container
+  overflow: hidden
+  padding: 1em
+header,footer
+  background-color: $darkest-gray
+  color: $font-invert
+header
+  position: fixed
+  width: 100%
+section:nth-child(3n)
+  background-color: $dark-gray
+  color: $font-invert
+section:nth-child(3n+1)
+  background-color: $medium-gray
+  color: $font-invert
+  cite
+    color: $font-invert
+section:nth-child(3n+2)
+  background-color: $darker-gray
+  color: $font-invert
+  cite
+    color: $font-invert
