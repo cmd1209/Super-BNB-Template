@@ -9,11 +9,13 @@ $(document).ready(function() {
     if (mobilewrap.is(':visible')) {
       mobilewrap.animate({left: '-240px'},200);
       activator.animate({left: '5px'},200);
+      activator.css({position: 'absolute'});
       mobilewrap.delay(200).fadeOut();
     }
     else{
       mobilewrap.show().animate({left: '0'},200);
       activator.animate({left: '185px'},200);
+      activator.css({position: 'fixed'});
     }
   });
 });

@@ -3,15 +3,16 @@
   width: 240px
   display: none
   height: 100%
-  background-color: black
+  background-color: rgba(0,0,0,0.85)
   left: -240px
   top: 0
   bottom: 0
   z-index: 999
+
 .mobileactivator
   display: none
   z-index: 9999
-  position: fixed
+  position: absolute
   top: 5px
   left: 5px
   color: $darkest-gray
@@ -23,3 +24,18 @@
     color: white
   @include media($small-screen)
     display: block
+
+nav.mobile
+  text-align: center
+  padding: 3em 0
+  li
+    list-style: none
+    border-bottom: 1px solid $accent-color
+    &:last-child
+      border: none
+  a
+    text-transform: uppercase
+    padding: 1em
+    display: block
+    &:hover
+      background-color: black
