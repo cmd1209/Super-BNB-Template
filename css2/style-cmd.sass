@@ -1,6 +1,7 @@
 @import 'tools/tools-index'
 @import 'parts/nav'
 @import 'parts/article'
+@import 'parts/footer'
 
 .hero
   background: url(http://andreas-heller.de/wp-content/uploads/2013/12/666-04-Kirchenweg-6-sylt.jpg) no-repeat center center
@@ -33,6 +34,8 @@ header
 section:nth-child(3n)
   background-color: $dark-gray
   color: $font-invert
+  cite
+    color: $font-invert
 section:nth-child(3n+1)
   background-color: $medium-gray
   color: $font-invert
@@ -43,3 +46,5 @@ section:nth-child(3n+2)
   color: $font-invert
   cite
     color: $font-invert
+footer
+  text-align: center
