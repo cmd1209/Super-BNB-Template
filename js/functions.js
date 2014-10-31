@@ -23,11 +23,11 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $(function(){  $('.hero > div:gt(0)').hide();
+  $(function(){  $('.heroslideshow > div.slides:gt(0)').hide();
   setInterval(function(){
-    var rand = Math.floor(Math.random() * ($('.hero').children().length-1));
-    $('.hero > :first-child').appendTo('.hero').fadeOut(3250);
-    $('.hero > *').eq(rand).prependTo('.hero').fadeIn(3250);
+    var rand = Math.floor(Math.random() * ($('.heroslideshow').children().length-1));
+    $('.heroslideshow > :first-child').appendTo('.heroslideshow').fadeOut(3250);
+    $('.heroslideshow > *').eq(rand).prependTo('.heroslideshow').fadeIn(3250);
   }, 8000);
 });
 });
