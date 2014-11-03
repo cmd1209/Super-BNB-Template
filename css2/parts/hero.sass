@@ -2,6 +2,9 @@
 section.hero
   min-height: 500px
   position: relative
+  @include media($small-screen)
+    min-height: 0
+    overflow: hidden
   .slides
     width: 100%
     height: 100%
@@ -26,7 +29,7 @@ section.hero
       @include span-columns(8)
       @include shift(2)
     @include media($small-screen)
-      top: 0
+      position: relative
       @include span-columns(6)
       @include shift(0)
     h2
@@ -35,6 +38,9 @@ section.hero
       margin-bottom: 0.5em
     p
       font-size: 125%
+.heroslideshow
+  @include media($small-screen)
+    display: none
 
 
 

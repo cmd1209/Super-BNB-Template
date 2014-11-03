@@ -16,7 +16,7 @@ $(document).ready(function() {
     }
     else{
       mobilewrap.show().animate({left: '0'},200);
-      activator.animate({left: slideWidth-activatorWidth},200);
+      activator.animate({left: slideWidth-activatorWidth-5},200);
       activator.css({position: 'fixed'});
     }
   });
