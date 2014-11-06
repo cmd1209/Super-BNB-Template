@@ -7,8 +7,8 @@
 
 section.mainpage
   background-color: $primary-color
-body
-  background: url(../art/backgrounds/black_paper.png) repeat
+// body
+//   background: url(../art/backgrounds/black_paper.png) repeat
 
 .pcontain
   @include columns(2)
@@ -25,23 +25,27 @@ body
   overflow: hidden
   padding: 1em
 header,footer
-  background-color: rgba($darkest-gray, .5)
+  background-color: $darkest-gray
+  // background-color: rgba($darkest-gray, .5)
   color: $font-invert
 header
   width: 100%
   border-bottom: 2px solid $accent-color
 section:nth-child(3n)
-  background-color: rgba($dark-gray, .5)
+  background-color: $dark-gray
+  // background-color: rgba($dark-gray, .5)
   color: $font-invert
   cite
     color: $font-invert
 section:nth-child(3n+1)
-  background-color: rgba($medium-gray, .5)
+  background-color: $medium-gray
+  // background-color: rgba($medium-gray, .5)
   color: $font-invert
   cite
     color: $font-invert
 section:nth-child(3n+2)
-  background-color: rgba($darker-gray, .5)
+  background-color: $darker-gray
+  // background-color: rgba($darker-gray, .5)
   color: $font-invert
   cite
     color: $font-invert
