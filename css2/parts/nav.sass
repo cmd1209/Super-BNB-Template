@@ -15,6 +15,7 @@ header
     li
       display: inline-block
     a
+      @include transition (all 0.25s ease-in-out)
       color: $darkest-gray
       background-color: $accent-color
       color: white
@@ -25,6 +26,7 @@ header
         margin-left: 0.25em
         margin-right: 0.25em
       &:hover
+        @include transition (all 0.25s ease-in-out)
         background-color: $base-link-color
         color: white
-
+        padding-bottom: 2em
