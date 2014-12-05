@@ -11,7 +11,7 @@ module.exports = function(grunt) {
             },
             scripts: {
                 files: ['js/*.js'],
-                tasks: ['concat', 'uglify'],
+                tasks: ['uglify'],
                 options: {
                     spawn: false,
                 },
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
         uglify: {
             build: {
                 src: 'js/functions.js',
-                dest: 'js/min/functions.min.js'
+                dest: 'js/min/functions-min.js'
             }
         },
 

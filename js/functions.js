@@ -4,7 +4,6 @@ $(document).ready(function() {
   var activatorWidth = $('.mobileactivator').outerWidth();
   var activator = $('.mobileactivator');
   var mobilewrap = $('#mobilewrap');
-
   mobilewrap.css({left: -slideWidth-10});
 
   activator.click(function() {
