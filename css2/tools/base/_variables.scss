@@ -14,7 +14,6 @@ $unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip
 $header-line-height: $base-font-size * 1.25;
 $base-border-radius: em(5);
 
-
 // Color-Pallette
 $primary-color: #36888b;
 $accent-color: #c47900;
@@ -27,7 +26,6 @@ $darker-gray: darken($medium-gray, 14);
 $darkest-gray: darken($medium-gray, 21);
 
 $base-button-color: $primary-color;
-
 
 // Background Color
 $base-background-color: $light-gray;

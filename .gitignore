@@ -1,3 +1,6 @@
 .sublime-workspace
 .sublime-project
 .codekit
+node_modules
+.sass-cache
+.sass-cache/*
