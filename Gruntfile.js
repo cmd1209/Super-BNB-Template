@@ -4,7 +4,6 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-
         watch: {
             options: {
                 livereload: true,
@@ -38,11 +37,10 @@ module.exports = function(grunt) {
                     style: 'compressed'
                 },
                 files: {
-                    'css2/style-cmd.css': 'css2/style-cmd.sass'
+                    'css/style.css': 'css/style.sass'
                 }
             }
         }
-
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
@@ -51,6 +49,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['uglify','sass',]);
+    grunt.registerTask('default', ['watch']);
 
 };

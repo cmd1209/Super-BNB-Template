@@ -1,0 +1,52 @@
+@import 'tools/tools-index'
+@import 'parts/mobilenav'
+@import 'parts/nav'
+@import 'parts/hero'
+@import 'parts/article'
+@import 'parts/footer'
+
+section.mainpage
+  background-color: $primary-color
+// body
+//   background: url(../art/backgrounds/black_paper.png) repeat
+.pcontain
+  @include columns(2)
+  @include media($small-screen)
+    @include columns(1)
+
+.left, .right
+  @include span-columns(6)
+  @include media($small-screen)
+    @include span-columns(6)
+
+.wrap
+  @include outer-container
+  overflow: hidden
+  padding: 1em
+header,footer
+  background-color: $darkest-gray
+  // background-color: rgba($darkest-gray, .5)
+  color: $font-invert
+header
+  width: 100%
+  border-bottom: 2px solid $accent-color
+section:nth-child(3n)
+  background-color: $dark-gray
+  // background-color: rgba($dark-gray, .5)
+  color: $font-invert
+  cite
+    color: $font-invert
+section:nth-child(3n+1)
+  background-color: $medium-gray
+  // background-color: rgba($medium-gray, .5)
+  color: $font-invert
+  cite
+    color: $font-invert
+section:nth-child(3n+2)
+  background-color: $darker-gray
+  // background-color: rgba($darker-gray, .5)
+  color: $font-invert
+  cite
+    color: $font-invert
+footer
+  text-align: center
