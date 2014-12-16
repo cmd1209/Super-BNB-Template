@@ -2,6 +2,23 @@
 header
   h1
     float: left
+    letter-spacing: -4px
+    a
+      color: white
+      background-color: $accent-color
+      padding: 0.15em 0.7em
+      border-radius: $base-border-radius
+      @include transition (all 0.25s ease-in-out)
+      &:hover
+        @include transition (all 0.25s ease-in-out)
+        background-color: $primary-color
+        color: white
+        padding-bottom: 0.65em
+    strong
+      font-weight: 300
+      letter-spacing: 2px
+      font-size: 70%
+      text-transform: uppercase
     @include media($small-screen)
       text-align: center
       float: none
